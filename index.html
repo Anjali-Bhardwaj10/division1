@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: powderblue;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap; 
+      margin-top: 50px;
+    }
+
+    .section {
+      background-color: beige;
+      padding: 20px;
+      width: 200px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .section:hover {
+      transform: scale(1.05);
+    }
+
+    .section img {
+      width: 200px;
+      height: 170px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="section">
+      <img src="download.jpeg">
+      <h2>Home</h2>
+    </div>
+    <div class="section">
+      <img src="about.jpg">
+      <h2>About</h2>
+    </div>
+    <div class="section">
+      <img src="gallery.png">
+      <h2>Gallery</h2>
+    </div>
+    <div class="section">
+      <img src="phone.png">
+      <h2>Contact</h2>
+    </div>
+  </div>
+
+</body>
+</html>
